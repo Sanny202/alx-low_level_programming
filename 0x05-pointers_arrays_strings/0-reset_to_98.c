@@ -1,18 +1,11 @@
-#include <stdio.h>
-void updateValueTo98(int *ptr) {
-    if (ptr != NULL) {
-        *ptr = 98; 
-    } else {
-        printf("Error: Received a NULL pointer.\n");
-    }
-}
-int main() {
-    int number = 10;
-    int *ptr = &number;
-
-    printf("Before update: %d\n", *ptr);
-    updateValueTo98(ptr);
-    printf("After update: %d\n", *ptr);
-
-    return 0;
+#include "main.h"
+/**
+ * reset_to_98 - a function that takes a pointer to an int as parameter
+ * and updates the value it points to to 98
+ * @i: input
+ * Return: i
+ */
+void reset_to_98(int *i)
+{
+	*i = 98;
 }
