@@ -7,10 +7,11 @@
  * Return: the number of nodes that have been printed 
  **/
 size_t print_list(const list_t *x)
+
 {
 	size_t s = 0;
-
 	while (x)
+
 	{
 		if (!x->str)
 			printf("[0] (nil)\n");
