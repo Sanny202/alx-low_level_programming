@@ -9,11 +9,11 @@
  */
 int main(int ac, char **av)
 {
-    int res;
+ int res;
 
-    if (ac != 3)
+ if (ac != 3)
     {
-        dprintf(2, "Usage: %s filename text\n", av[0]);
+      dprintf(2, "Usage: %s filename text\n", av[0]);
         exit(1);
     }
     res = create_file(av[1], av[2]);
